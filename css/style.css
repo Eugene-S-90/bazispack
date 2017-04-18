@@ -1,0 +1,391 @@
+
+/* размеры шрифтов основного меню */
+h2 {
+    font-size: 1.1em;
+}
+.main {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+p.telephone {
+    position: absolute;
+    color: white;
+    left: 56%;
+    /* bottom: -55%; */
+    margin-top: 7%;
+}
+
+p.logotip {
+    position: absolute;
+    padding: 4%;
+    color: white;
+    border: 1px solid;
+    margin-top: 4%;
+    left: 11%;
+}
+
+
+
+.menu p {
+    font-size: 1.5rem!important;
+}
+
+ a:not([href]):not([tabindex]) {
+    color: #fff;
+    text-decoration: none;
+}
+
+.company h3 {
+    font-size: 2.5em;
+    color: #fff;
+}
+.production h3 {
+    font-size: 2.5em;
+    color: #fff;
+}
+.home h3 {
+    font-size: 2.7em;
+    color: #fff;
+}
+.product h3 {
+    font-size: 2.2em;
+    color: #fff;
+}
+.about h3 {
+    font-size: 2.2em;
+    color: #fff;
+    padding: 0 25px;
+}
+
+/* сдвиг очновного меню */
+.circe-menu {
+    position: relative;
+    top: -35px;
+}
+
+/* кнопка НАШИ ВАКАНСИИ */
+.vacancy a {
+    border: 1px solid black;
+    padding: 5px;
+}
+.vacancy {
+    text-align: center;
+    top: -85px;
+    position: relative;
+}
+.vacancy a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.43);
+    border: none;
+    font-size: 1.3em;
+    transition: 1s ease;
+}
+.vacancy a:hover {
+    background: #000000;
+    transition: 1s ease;
+    color: #eceeef;
+    border: 1px solid white;
+}
+
+
+
+/* КНОПКА НАШИ ВАКАНСИИ Анимация*/
+/* Hang */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* Вакансии - */
+
+.col-sm.personal-box.text-center.main-box {
+    border: 2px solid #4387c5;
+}
+.main-box {
+    border:2px solid #4387c5;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+
+}
+
+.main-box:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    margin-top: 2px!important;
+}
+
+
+
+img.img-fluid.adm {
+    width: 235px;
+    height: 160px;
+    padding-bottom: 15px;
+}
+
+
+.personal-box a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background: rgba(49, 124, 192, 0.91);
+    border: 1px solid;
+    font-size: 1.3em;
+    transition: 1s ease;
+}
+.personal-box a:hover {
+    background: yellow;
+    transition: 1s ease;
+    color: #292b2c;
+    border: 1px solid white;
+}
+
+.text-center {
+    text-align: center !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p.title {
+    font-size: 1.7em;
+    padding-top: 10px;
+}
+p.title:before {
+    content: '';
+    height: 2px;
+    background: #4387c5;
+    position: absolute;
+    width: 8%;
+    left: 47%;
+    top: 11%;
+}
+p.title-main {
+    font-size: 1.7em;
+}
+
+p.title-main:before {
+    content: '';
+    height: 2px;
+    background: #4387c5;
+    position: absolute;
+    width: 8%;
+    left: 47%;
+    top: 66%;
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.container-personal-all {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+span.vakant-places {
+    color: #025aa5;
+    font-size: 19px;
+    font-weight: 900;
+}
+span.duties {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.col.personal-box.text-center {
+    padding: 10px;
+    margin: 10px;
+      border: 2px solid;
+}
+.col-sm.personal-box.text-center {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid;
+}
+
+
+
+img.img-fluid.img-personal {
+    width: 235px;
+    height: 196px;
+}
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+
+
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}

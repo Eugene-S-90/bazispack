@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>БАЗИСПАК</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/circle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/modal.css"/>
+		<script src="js/jquery-2.1.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+    <!-- Menu Starts - cm is abbreviation of circle menu -->
+<div class="main container-fluid">
+<div class='container-fluid header'>
+<div class="row">
+	<div class="col"><p class="logotip">ЛОГОТИП</p></div>
+
+	<div class=" col "><p class="telephone"><img src="img/footer-phone.png"></img>+380 095 323 22 00</p>
+
+	</div>
+</div>
+</div>
+<div class="container-fluid circe-menu " id='ajax'>
+	<div class="cm-container ">
+      <div class="cm-large-circle">
+        <ul class="cm-small-circle">
+          <li ><a onClick="goProduction();" href="#" id="production"><i class="fa fa-cube fa-lg" aria-hidden="true"></i></a>
+            <div class="cm-description production">
+              <h3>ПРОДУКЦИЯ</h3>
+              <p>Для перехода в соотвествующий раздел нажмите на иконку</p>
+            </div>
+          </li>
+						<!-- Отключенное меню!-->
+          <li style='visibility: hidden;'><a href="#"><i class="icon-info-sign"></i></a>
+            <div class="cm-description">
+              <h2>About Us</h2>
+              <p>Donec lobortis sagittis augue a tincidunt. Nulla facilisi. Nullam ultrices sem non nisl blandit eu posuere urna dapibus.</p>
+            </div>
+          </li>
+						<!-- Отключенное меню!-->
+          <li ><a href="#" id="about-company" onClick="goAbout();"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a>
+            <div class="cm-description company">
+              <h3>О КОМПАНИИ</h3>
+              <p>Для перехода в соотвествующий раздел нажмите на иконку</p>
+            </div>
+          </li>
+						<!-- Отключенное меню!-->
+          <li style='visibility: hidden;'><a href="#"><i class="icon-credit-card"></i></a>
+            <div class="cm-description">
+              <h2>Payment</h2>
+              <p>Donec lobortis sagittis augue a tincidunt. Nulla facilisi. Nullam ultrices sem non nisl blandit eu posuere urna dapibus.</p>
+            </div>
+          </li>
+						<!-- Отключенное меню!-->
+          <li><a href="#"  id="contacts"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i></a>
+          <div class="arrow"></div>
+            <div class="cm-description">
+              <h2>Контакты</h2>
+              <p>Для перехода в соотвествующий раздел нажмите на иконку</p>
+            </div>
+          </li>
+						<!-- Отключенное меню!-->
+          <li style='visibility: hidden;'><a href="#"><i class="icon-envelope-alt"></i></a>
+            <div class="cm-description">
+              <h2>Contact</h2>
+              <p>Donec lobortis sagittis augue a tincidunt. Nulla facilisi. Nullam ultrices sem non nisl blandit eu posuere urna dapibus.</p>
+            </div>
+          </li>
+						<!-- Отключенное меню!-->
+          <div class="logo"><h2>ООО "БАЗИСПАК"</h2><p>Основательный подход</p></div>
+        </ul>
+      </div>
+
+    </div>
+	</div>
+<div class=" container-fluid vacancy ">
+	<div class="row">
+		<div class="col ">
+			<a href="#container-main-personal" class="hvr-hang">Наши Вакансии</a>
+		</div>
+	</div>
+</div>
+
+	<!-- /cm-container -->
+    <!-- End of Menu -->
+
+
+
+<div class='container-fluid container-personal-all'  id="container-main-personal"  style="background:white;">
+
+
+		<div class="row">
+			<div class="col-sm personal-box  text-center main-box ">
+			<p class="title">Административный персонал</p>
+				<img class="img-fluid adm" src="img/Adm-p.jpg"></img>
+
+				<p class="adm-personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas. Sed est mauris, viverra ac leo sit amet, feugiat rutrum sem. Aliquam facilisis diam in ullamcorper auctor. Sed pretium libero non neque tempor elementum. Maecenas euismod quis nulla eu cursus. Donec congue, leo sit amet blandit mollis, sem velit vulputate lorem, eget interdum purus ipsum eu magna. Aenean sem tellus, scelerisque eget mi vitae, fringilla ultrices leo.</p>
+				<div class="col text-center"><a href="#container-administration" class="hvr-pulse-grow">Узнать подробнее</a>
+			</div>
+			</div>
+			<div class="col-sm text-center personal-box main-box ">
+				<p class="title">Производственный  персонал</p>
+				<img class="img-fluid adm" src="img/pr-p.jpg"></img>
+
+				<p class="adm-personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas. Sed est mauris, viverra ac leo sit amet, feugiat rutrum sem. Aliquam facilisis diam in ullamcorper auctor. Sed pretium libero non neque tempor elementum. Maecenas euismod quis nulla eu cursus. Donec congue, leo sit amet blandit mollis, sem velit vulputate lorem, eget interdum purus ipsum eu magna. Aenean sem tellus, scelerisque eget mi vitae, fringilla ultrices leo.</p>
+				<div class="col text-center"><a href="#container-production-personal" class="hvr-pulse-grow">Узнать подробнее</a>
+			</div>
+			</div>
+				<div class="col-sm text-center personal-box main-box ">
+					<p class="title">Персонал отдела сбыта</p>
+					<img class="img-fluid adm" src="img/sbit-p.jpg"></img>
+
+					<p class="adm-personal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas. Sed est mauris, viverra ac leo sit amet, feugiat rutrum sem. Aliquam facilisis diam in ullamcorper auctor. Sed pretium libero non neque tempor elementum. Maecenas euismod quis nulla eu cursus. Donec congue, leo sit amet blandit mollis, sem velit vulputate lorem, eget interdum purus ipsum eu magna. Aenean sem tellus, scelerisque eget mi vitae, fringilla ultrices leo.</p>
+					<div class="col text-center"><a href="#container-seller-personal" class="hvr-pulse-grow">Узнать подробнее</a>
+				</div>
+				</div>
+
+	</div>
+
+<div class='container-fluid container-personal-all'  id="container-administration"  style="background:white;">
+	<div class="row">
+		<div class="col text-center"><p class="title-main">Административный персонал</p></div>
+		</div>
+		<div class="row">
+			<div class="col-sm personal-box  text-center hvr-grow">
+				<h3>Юрист</h3>
+				<img class="img-fluid img-personal hvr-bob" src="img/urist.png"></img>
+				<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">5</span></p>
+				<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+				<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+				<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+			</div>
+			<div class="col-sm text-center personal-box hvr-grow ">
+				<h3>Секретарь</h3>
+				<img class="img-fluid img-personal hvr-bob" src="img/sec.png"></img>
+				<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">2</span></p>
+				<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+				<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+				<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+			</div>
+				<div class="col-sm text-center personal-box  hvr-grow">
+					<h3>Бухгалтер</h3>
+					<img class="img-fluid img-personal hvr-bob" src="img/bu.png"></img>
+					<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">6</span></p>
+					<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+					<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+					<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+				</div>
+
+	</div>
+	</div>
+
+
+	<div class='container-fluid container-personal-all' id="container-production-personal" style="background:white;">
+		<div class="row">
+			<div class="col text-center"><p class="title-main">Производственный персонал</p></div>
+			</div>
+			<div class="row">
+				<div class="col-sm personal-box  text-center hvr-grow">
+					<h3>Уборщик</h3>
+					<img class="img-fluid img-personal hvr-bob" src="img/jan.png"></img>
+					<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">5</span></p>
+					<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+					<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+					<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+				</div>
+				<div class="col-sm text-center personal-box hvr-grow  ">
+					<h3>Сварщик</h3>
+					<img class="img-fluid img-personal hvr-bob" src="img/weld.png"></img>
+					<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">2</span></p>
+					<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+					<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+					<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+				</div>
+					<div class="col-sm text-center personal-box hvr-grow ">
+						<h3>Упаковщик</h3>
+						<img class="img-fluid img-personal hvr-bob" src="img/upak.png"></img>
+						<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">6</span></p>
+						<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+						<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+						<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+					</div>
+
+		</div>
+		</div>
+
+
+		<div class='container-fluid container-personal-all' id="container-seller-personal" style="background:white;">
+			<div class="row">
+				<div class="col text-center"><p class="title-main">Персонал отдела сбыта</p></div>
+				</div>
+				<div class="row">
+					<div class="col-sm personal-box  text-center hvr-grow">
+						<h3>Вакансия 1</h3>
+						<img class="img-fluid img-personal hvr-bob" src="img/q.png"></img>
+						<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">2</span></p>
+						<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+						<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+						<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+					</div>
+					<div class="col-sm text-center personal-box hvr-grow  ">
+						<h3>Вакансия 2</h3>
+						<img class="img-fluid img-personal hvr-bob" src="img/q.png"></img>
+						<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">4</span></p>
+						<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+						<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+						<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+					</div>
+						<div class="col-sm text-center personal-box hvr-grow ">
+							<h3>Вакансия 3</h3>
+							<img class="img-fluid img-personal hvr-bob" src="img/q.png"></img>
+							<p class="adm-personal"> Колличество свободных мест:<span class="vakant-places">1</span></p>
+							<p class="adm-personal"><span class="duties">Обязанности:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+							<p class="adm-personal"><span class="duties">Требования к кандидату:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet odio et sem auctor egestas.</p>
+							<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>
+						</div>
+
+			</div>
+			</div>
+
+
+</div>
+
+
+<!-- МОДАЛЬНОЕ ОКНО-->
+<!--	<div class="modal-button"><a href="#0" class="hvr-wobble-vertical" id="modal-trigger" data-type="cd-modal-trigger">Отправить резюме</a></div>-->
+
+<div class="cd-modal text-center" data-modal="modal-trigger">
+	<div class="cd-svg-bg"
+	data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
+	data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
+	data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
+	data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
+	data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
+	data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+		<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+			<title>SVG Modal background</title>
+			<path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+			<path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+			<path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+		</svg>
+	</div>
+
+	<div class="cd-modal-content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm">
+
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIuRPOsfSNPAKNhLrXecTeIbqnSwjB_8SJE0hWYHa_-AZEOQ/viewform?embedded=true" width="85%" height="768" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+				</div>
+			</div>
+		</div>
+	</div> <!-- cd-modal-content -->
+
+	<a href="#0" class="modal-close">Close</a>
+</div> <!-- cd-modal -->
+<!-- МОДАЛЬНОЕ ОКНО-->
+
+
+<!-- ПЛавный скроллер-->
+<script>
+$("body").on('click', '[href*="#"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
+</script>
+<!-- ПЛавный скроллер-->
+<script src="js/snap.svg-min.js"></script>
+<script src="js/modal.js"></script>
+  </body>
+</html>
